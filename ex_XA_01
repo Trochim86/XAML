@@ -1,0 +1,37 @@
+<Grid>
+
+        <Grid.ColumnDefinitions>
+        <!-- Dodanie "*" do Width powoduje wprowadzenie proporcji przy  powiększaniu okna-->
+            <ColumnDefinition Width="1*" MinWidth="100"/>
+            <ColumnDefinition Width="5*"/>    
+
+        </Grid.ColumnDefinitions>
+
+        <TextBlock>MENU</TextBlock>
+        <TextBlock  Margin="15" Grid.Column="1">TXT TX TX TX  TX</TextBlock>
+        <GridSplitter Grid.Column="1" Width="5" Background="Red" HorizontalAlignment="Left"/>
+    </Grid>
+    
+    <Grid >
+        <!-- Tworzenie kolumny na arkuszy-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <!-- Tworzenie wiersza na arkuszy-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <!-- Tworzenie kolorowego tła na arkuszy-->
+        <Rectangle Grid.Row="2" Grid.Column="1"  Fill="AliceBlue" />
+        <Rectangle Grid.Row="1" Grid.Column="1"  Fill="Blue" Height="50" Width="50" Margin="10 " Margin="4,10,10,0"/>
+        <!-- Tworzenie tekstu na arkuszy-->
+        <TextBlock FontSize="40" HorizontalAlignment="" VerticalAlignment="Center" Background="Gold">TXT</TextBlock>
+        <Button x:Name="button" Content="Button" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="2" VerticalAlignment="Center" Height="22" Width="114"/>
+    </Grid>
+    
+    
+    
