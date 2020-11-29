@@ -1,0 +1,12 @@
+<!-- Obiekty ukłądane na stosie  -->
+    
+    <StackPanel Orientation="Vertical" Width="300" Background="RoyalBlue">
+
+        <Button HorizontalAlignment="Left"  Height="30" Width="100">1</Button>
+        <Button HorizontalAlignment="Center"  Height="30" Width="100">2</Button>
+        <Button HorizontalAlignment="Right"  Height="30" Width="100">3</Button>
+        
+        
+        
+        
+    </StackPanel>
