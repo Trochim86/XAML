@@ -1,0 +1,11 @@
+<!-- Dokowanie panelu-->
+    
+    <DockPanel LastChildFill="True">
+
+        <Button DockPanel.Dock="Top" Width="200">1</Button>
+        <Button DockPanel.Dock="Left" Width="120">2</Button>
+        <Button DockPanel.Dock="Right" Width="120">3</Button>
+        <Button DockPanel.Dock="Bottom" Width="200">4</Button>
+        <Button>TEST</Button>
+        
+    </DockPanel>
