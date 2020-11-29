@@ -1,0 +1,27 @@
+<GroupBox Header="Ile czasy spedzasz na komputrze ?">
+
+            <StackPanel>
+                <!-- StackPanel pozwala osiągnąć podobny efekt jak GroupName-->
+
+                <!-- <Label FontWeight="Bold" FontSize="20" >Ile czasy spedzasz na komputrze ?</Label>-->
+                <RadioButton GroupName="AD1">In progress</RadioButton>
+                <RadioButton GroupName="AD1">Action</RadioButton>
+                <RadioButton GroupName="AD1">Suspended</RadioButton>
+                <!-- GrpupName pozwala na utworzenie osobnej grupy i zapisanie zmainay -->
+
+            </StackPanel>
+
+        </GroupBox>
+        
+        
+        <StackPanel>
+
+            <Label FontWeight="Bold" FontSize="20" Background="Chocolate">Ile czasy potrzebujesz na regeneracje ?</Label>
+            <RadioButton GroupName="AD2">2-4</RadioButton>
+            <RadioButton GroupName="AD2">4-6</RadioButton>
+            <RadioButton GroupName="AD2">6-9</RadioButton>
+
+        </StackPanel>
+        
+
+    </StackPanel>
