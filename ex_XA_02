@@ -1,0 +1,14 @@
+<!-- Obiektu dodane do tej siatki zajmują tyle samo miejsca -->
+    
+    <UniformGrid Rows="1" Width="50">
+
+        <Button Width="50">1</Button>
+        <Button>2</Button>
+        <Button>3</Button>
+        <Button>4</Button>
+        <Button>5</Button>
+
+    </UniformGrid>
+    
+    
+    
