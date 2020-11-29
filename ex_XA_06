@@ -1,0 +1,27 @@
+<!-- Niestandardowe rysowanie -->
+    
+    <Canvas Margin="0,0,0,4">
+        <Button x:Name="button" Content="Button" Canvas.Left="365" Canvas.Top="139" Width="200"/>
+        <Button x:Name="button1" Content="Button" Canvas.Left="365" Canvas.Top="197" Width="200"/>
+        
+        <!-- Dodawanie rozwijanego paska -->
+        
+        <Expander Header="teks próbny test próbny" Margin="15" IsExpanded="True">
+
+            <TextBlock>Aby się z nami skontaktować musisz zrobić rozwinąć roletę</TextBlock>
+
+        </Expander>
+
+        <!-- Wstawianie skrola-->
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Visible" Height="64" Width="275" Canvas.Top="12" Canvas.Left="327">
+            
+            
+            <TextBlock>
+                
+            To jest przykładowy txt,To jest przykładowy txt To jest przykładowy txt,To jest przykładowy txt
+            </TextBlock>
+
+        </ScrollViewer>
+        
+    </Canvas>
+</Window>
