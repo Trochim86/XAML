@@ -1,0 +1,46 @@
+public partial class MainWindow : Window
+    {
+       
+
+        private void textBok_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            double bok;
+            if(double.TryParse(textBok.Text, out bok) && bok >0)
+            {
+                textPole.Text = Math.Pow(bok, 2.0).ToString();
+                textObwód.Text = (bok * 4).ToString();
+                lblKomunikat.Content = String.Empty; 
+            }
+           
+        }
+
+        private void clic_Click(object sender, RoutedEventArgs e)
+        {
+            textBok.Text = String.Empty;
+            textPole.Text = String.Empty;
+            textObwód.Text = String.Empty;
+            lblKomunikat.Content = "Wpisz wymiar boku";
+            
+        }
+    }
+}
+
+--------------------------------------------------------------------
+
+<Grid>
+
+
+        <Button x:Name="clic" Content="Wyczyść dane" HorizontalAlignment="Left" Margin="190,349,0,0" VerticalAlignment="Top" Height="60" Width="235" Foreground="Red" FontSize="24" Click="clic_Click"/>
+
+        <Label x:Name="lblBok" Content="BOK" HorizontalAlignment="Left" Margin="52,68,0,0" VerticalAlignment="Top" FontSize="24
+               "/>
+        <Label x:Name="lblPole" Content="POLE" HorizontalAlignment="Left" Margin="52,129,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="lblObwód" Content="Obwód" HorizontalAlignment="Left" Margin="52,0,0,0" VerticalAlignment="Center" FontSize="24"/>
+
+        <TextBox x:Name="textObwód" HorizontalAlignment="Left" Margin="190,0,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Center" Width="250" Height="42" IsEnabled="False"/>
+        <TextBox x:Name="textPole" HorizontalAlignment="Left" Margin="190,129,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="42" IsEnabled="False"/>
+        <TextBox x:Name="textBok" HorizontalAlignment="Left" Margin="190,63,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="42" TextChanged="textBok_TextChanged"/>
+        <Label x:Name="lblKomunikat" Content="Wpisz wymiar boku" HorizontalAlignment="Left" Margin="504,68,0,0" VerticalAlignment="Top" FontSize="24" Foreground="Red"/>
+
+    </Grid>
+</Window>
